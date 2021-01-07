@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Entry.create(meal_type: 'Eggs', calories: 100, proteins: 10, carbs: 100, fats: 0)

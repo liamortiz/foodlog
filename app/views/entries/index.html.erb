@@ -1,0 +1,10 @@
+<h1>Entries</h1>
+<p>Here are a few of our fine entries:</p>
+<% @entries.each do |entry| %>
+    <p>
+        <%= entry.meal_type %>
+        <%= entry.proteins %>
+        <%= entry.carbs %>
+        <%= entry.fats %>
+    </p>
+<% end %>
