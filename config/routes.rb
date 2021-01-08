@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :friends
   resources :entries
-  root to: "entries#index"
+  get 'home/about'
+  root to: "home#index"
 end
