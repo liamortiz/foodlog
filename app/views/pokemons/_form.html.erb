@@ -1,0 +1,15 @@
+<%= form_with model: @pokemon do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :id %>
+    <%= f.text_field :pokemon_id %>
+
+    <%= f.label "Primary Type" %>
+    <%= f.text_field :type1 %>
+
+    <%= f.label "Secondary Type" %>
+    <%= f.text_field :type2 %>
+
+    <%= f.submit %>
+<% end %>

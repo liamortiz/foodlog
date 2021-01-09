@@ -10,24 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_07_175707) do
+ActiveRecord::Schema.define(version: 2021_01_09_170716) do
 
-  create_table "entries", force: :cascade do |t|
-    t.string "meal_type"
-    t.integer "calories"
-    t.integer "proteins"
-    t.integer "carbs"
-    t.integer "fats"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "friends", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "email"
-    t.string "phone"
-    t.string "twitter"
+  create_table "pokemons", force: :cascade do |t|
+    t.string "name"
+    t.string "pokemon_id"
+    t.string "type1"
+    t.string "type2"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -1,0 +1,39 @@
+// Place all the styles related to the Pokemons controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+#wrapper {
+    display: flex;
+}
+
+.pokemon-container {
+    margin: 2em 1em;
+    input[type=submit] {
+        color: white;
+        background: red;
+        padding: .5em;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 1em;
+    }
+    img {
+        border-radius: 10px;
+        background: rgb(211, 211, 211);
+        border: 1px solid rgb(202, 202, 202);
+    }
+    p {
+        font-weight: bold;
+    }
+    .type {
+        background-color: brown;
+        border-radius: 10px;
+        color: white;
+        padding: .2em 1em;
+    }
+}
+
+form {
+    input {
+        display: block;
+    }
+}

@@ -7,4 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Entry.create(meal_type: 'Eggs', calories: 100, proteins: 10, carbs: 100, fats: 0)
+Pokemon.create(name: 'Nosepass', pokemon_id: 299, type1: 'Rock', type2: '', image: 'nosepass.png')

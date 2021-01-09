@@ -1,0 +1,21 @@
+<h1>Pokedex</h1>
+<%= link_to "Create Pokemon", { action: :new } %>
+
+
+<div id="wrapper">
+<% @pokemons.each do |poke| %>
+    <div class="pokemon-container">
+        <%= button_to "Release", { controller: :pokemons, action: :destroy, id: poke.id }, method: :delete %>
+        <%= button_to "Edit", { controller: :pokemons, action: :edit, id: poke.id }, method: :get %>
+        <%= image_tag "#{poke.pokemon_id}.png" %>
+        <p>#<%= poke.pokemon_id %></p>
+        <h3><%= poke.name %></h3>
+
+        <span class="type"><%= poke.type1 %></span>
+
+        <% if poke.type2 != "" %>
+            <span class="type"><%= poke.type2 %></span>
+        <% end %>
+    </div>
+<% end %>
+</div>
