@@ -1,0 +1,17 @@
+<h1>Rails Poke</h1>
+<p>Total Trainers in DB: <%= @trainers.size %></p>
+
+<%= link_to "New Trainer", {controller: :trainers, action: :new}, method: :get %>
+<%= link_to "New Pokemon", {controller: :pokemons, action: :new}, method: :get %>
+
+<div class="container">
+    <% @trainers.each do |trainer| %>
+        <div class="trainer-box">
+        <p><%= trainer.name %> <span><%= trainer.pokemons.size %> Pokemon Caught</span></p>
+        <%= image_tag "trainer_#{trainer.sex.downcase}.png", class: "trainer_image" %>
+
+        <%= link_to "Delete", {controller: :trainers, action: :destroy, id: trainer.id }, method: :delete %>
+        <%= link_to "View Pokemons", {controller: :trainers, action: :show, id: trainer.id} %>
+        </div>
+    <% end %>
+</div>

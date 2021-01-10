@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+ .trainer_image {
+     width: 150px;
+     height: 300px;
+     display: block;
+     margin: 0 auto;
+ }
+.trainer-box {
+    display: inline-block;
+    width: 250;
+    padding: 1em;
+    border: 1px solid rgb(192, 192, 192);
+    p {
+        font-size: 120%;
+        font-weight: bold;
+        text-align: center;
+        span {
+            font-weight: lighter;
+            font-size: 70%;
+            text-indent: 1em;
+        }
+    }
+}

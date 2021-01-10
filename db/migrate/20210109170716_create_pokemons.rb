@@ -6,6 +6,8 @@ class CreatePokemons < ActiveRecord::Migration[6.0]
       t.string :type1
       t.string :type2
 
+      t.integer :trainer_id
+
       t.timestamps
     end
   end

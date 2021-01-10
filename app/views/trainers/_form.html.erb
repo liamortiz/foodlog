@@ -1,0 +1,8 @@
+<%= form_with model: @trainer do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    
+    <%= f.select :sex, ['Male', 'Female'] %>
+
+    <%= f.submit %>
+<% end %>

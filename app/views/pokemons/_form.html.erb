@@ -11,5 +11,8 @@
     <%= f.label "Secondary Type" %>
     <%= f.text_field :type2 %>
 
+    <%= f.label "Trainer ID" %>
+    <%= f.select :trainer_id, @trainers.all.map{|trainer| trainer.id} %>
+
     <%= f.submit %>
 <% end %>
