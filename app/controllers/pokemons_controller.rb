@@ -10,7 +10,7 @@ class PokemonsController < ApplicationController
 
     def update
         @pokemon = Pokemon.find(params[:id])
-        @pokemon.update(pokemon_params)
+        @pokemon.update(pokemon_params)                                                                                   
         redirect_to root_path
     end
     
